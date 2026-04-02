@@ -1,0 +1,35 @@
+---
+import ApplicationsSection from '../components/ApplicationsSection.astro';
+import ContactSection from '../components/ContactSection.astro';
+import Footer from '../components/Footer.astro';
+import GlobalServiceSection from '../components/GlobalServiceSection.astro';
+import Header from '../components/Header.astro';
+import HeroSection from '../components/HeroSection.astro';
+import PainPointsSection from '../components/PainPointsSection.astro';
+import ProductsSection from '../components/ProductsSection.astro';
+import ProofSection from '../components/ProofSection.astro';
+import StatsSection from '../components/StatsSection.astro';
+import TechnologySection from '../components/TechnologySection.astro';
+import Layout from '../layouts/Layout.astro';
+import { defaultLanguage, languages, siteContent } from '../data/siteContent';
+
+const content = siteContent[defaultLanguage];
+---
+
+<Layout title={content.meta.title} description={content.meta.description}>
+  <div data-language-root data-language={defaultLanguage} data-site-content={JSON.stringify(siteContent)}>
+    <Header content={content} languages={languages} currentLanguage={defaultLanguage} />
+    <main>
+      <HeroSection content={content} />
+      <StatsSection content={content} />
+      <PainPointsSection content={content} />
+      <ProductsSection content={content} />
+      <ApplicationsSection content={content} />
+      <TechnologySection content={content} />
+      <GlobalServiceSection content={content} />
+      <ProofSection content={content} />
+      <ContactSection content={content} />
+    </main>
+    <Footer content={content} />
+  </div>
+</Layout>

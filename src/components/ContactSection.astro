@@ -1,0 +1,23 @@
+---
+import type { SiteContent } from '../lib/types';
+
+const { content } = Astro.props as { content: SiteContent };
+---
+
+<section class="section" id="contact">
+  <div class="container contact-block">
+    <div class="section-heading section-heading--compact">
+      <p class="eyebrow" data-i18n="contactIntro.eyebrow">{content.contactIntro.eyebrow}</p>
+      <h2 data-i18n="contactIntro.title">{content.contactIntro.title}</h2>
+      <p data-i18n="contactIntro.description">{content.contactIntro.description}</p>
+    </div>
+    <div class="contact-list">
+      {content.contacts.map((item, index) => (
+        <a class="contact-item" href={item.href}>
+          <span class="contact-item__label" data-i18n={`contacts.${index}.label`}>{item.label}</span>
+          <strong data-i18n={`contacts.${index}.value`}>{item.value}</strong>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

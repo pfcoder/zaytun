@@ -1,0 +1,31 @@
+---
+import type { SiteContent } from '../lib/types';
+
+const { content } = Astro.props as { content: SiteContent };
+---
+
+<section class="section section--dark" id="products">
+  <div class="container">
+    <div class="section-heading section-heading--light">
+      <p class="eyebrow" data-i18n="productsIntro.eyebrow">{content.productsIntro.eyebrow}</p>
+      <h2 data-i18n="productsIntro.title">{content.productsIntro.title}</h2>
+      <p data-i18n="productsIntro.description">{content.productsIntro.description}</p>
+    </div>
+    <div class="card-grid card-grid--two">
+      {content.products.map((item, index) => (
+        <article class="card card--dark">
+          <div class="product-card__top">
+            <p class="product-card__tag" data-i18n="ui.graphiteGradeLabel">{content.ui.graphiteGradeLabel}</p>
+            <h3 data-i18n={`products.${index}.name`}>{item.name}</h3>
+          </div>
+          <p data-i18n={`products.${index}.summary`}>{item.summary}</p>
+          <ul class="spec-list">
+            {item.specs.map((spec, specIndex) => (
+              <li data-i18n={`products.${index}.specs.${specIndex}`}>{spec}</li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

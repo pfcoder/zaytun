@@ -1,0 +1,22 @@
+---
+import type { SiteContent } from '../lib/types';
+
+const { content } = Astro.props as { content: SiteContent };
+---
+
+<section class="section section--muted" id="technology">
+  <div class="container section-split">
+    <div class="section-heading section-heading--compact">
+      <p class="eyebrow" data-i18n="technologyIntro.eyebrow">{content.technologyIntro.eyebrow}</p>
+      <h2 data-i18n="technologyIntro.title">{content.technologyIntro.title}</h2>
+      <p data-i18n="technologyIntro.description">{content.technologyIntro.description}</p>
+    </div>
+    <div class="list-card">
+      <ul class="bullet-list">
+        {content.technologyPoints.map((item, index) => (
+          <li data-i18n={`technologyPoints.${index}`}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>

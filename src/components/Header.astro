@@ -1,0 +1,34 @@
+---
+import type { Language, SiteContent } from '../lib/types';
+
+type Props = {
+  content: SiteContent;
+  languages: readonly Language[];
+  currentLanguage: Language;
+};
+
+const { content, languages, currentLanguage } = Astro.props;
+---
+
+<header class="site-header" data-site-header>
+  <div class="container site-header__inner">
+    <a class="brand" href="#top" data-i18n="header.brand">{content.header.brand}</a>
+    <nav class="site-nav" aria-label="Primary">
+      {content.header.nav.map((item, index) => (
+        <a href={item.href} data-i18n={`header.nav.${index}.label`}>{item.label}</a>
+      ))}
+    </nav>
+    <div class="language-switcher" aria-label="Language selector">
+      {languages.map((language) => (
+        <button
+          class:list={["language-switcher__button", language === currentLanguage && 'is-active']}
+          type="button"
+          data-language-trigger={language}
+          aria-pressed={language === currentLanguage ? 'true' : 'false'}
+        >
+          {content.header.languages[language]}
+        </button>
+      ))}
+    </div>
+  </div>
+</header>

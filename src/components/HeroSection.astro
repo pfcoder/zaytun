@@ -1,0 +1,28 @@
+---
+import type { SiteContent } from '../lib/types';
+
+const { content } = Astro.props as { content: SiteContent };
+---
+
+<section class="hero" id="top">
+  <div class="container hero__grid">
+    <div class="hero__content">
+      <p class="eyebrow" data-i18n="hero.eyebrow">{content.hero.eyebrow}</p>
+      <h1 data-i18n="hero.title">{content.hero.title}</h1>
+      <p class="hero__description" data-i18n="hero.description">{content.hero.description}</p>
+      <div class="hero__actions">
+        <a class="button button--primary" href={content.hero.primaryCta.href} data-i18n="hero.primaryCta.label">
+          {content.hero.primaryCta.label}
+        </a>
+        <a class="button button--secondary" href={content.hero.secondaryCta.href} data-i18n="hero.secondaryCta.label">
+          {content.hero.secondaryCta.label}
+        </a>
+      </div>
+      <p class="hero__note" data-i18n="hero.locationNote">{content.hero.locationNote}</p>
+    </div>
+    <div class="hero__visual" aria-hidden="true">
+      <div class="hero__visual-panel hero__visual-panel--tall"></div>
+      <div class="hero__visual-panel hero__visual-panel--short"></div>
+    </div>
+  </div>
+</section>

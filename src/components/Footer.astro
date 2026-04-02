@@ -1,0 +1,27 @@
+---
+import type { SiteContent } from '../lib/types';
+
+const { content } = Astro.props as { content: SiteContent };
+---
+
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div>
+      <p class="site-footer__label" data-i18n="footer.dubaiLabel">{content.footer.dubaiLabel}</p>
+      <p data-i18n="footer.dubaiValue">{content.footer.dubaiValue}</p>
+    </div>
+    <div>
+      <p class="site-footer__label" data-i18n="footer.chinaLabel">{content.footer.chinaLabel}</p>
+      <p data-i18n="footer.chinaValue">{content.footer.chinaValue}</p>
+    </div>
+    <div>
+      <p class="site-footer__label" data-i18n="footer.supportLabel">{content.footer.supportLabel}</p>
+      <p data-i18n="footer.supportValue">{content.footer.supportValue}</p>
+      <p class="site-footer__label" data-i18n="footer.socialLabel">{content.footer.socialLabel}</p>
+      <p data-i18n="footer.socialValue">{content.footer.socialValue}</p>
+    </div>
+  </div>
+  <div class="container site-footer__bottom">
+    <p data-i18n="footer.copyright">{content.footer.copyright}</p>
+  </div>
+</footer>

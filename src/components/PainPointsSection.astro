@@ -1,0 +1,26 @@
+---
+import type { SiteContent } from '../lib/types';
+
+const { content } = Astro.props as { content: SiteContent };
+---
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow" data-i18n="painPointsIntro.eyebrow">{content.painPointsIntro.eyebrow}</p>
+      <h2 data-i18n="painPointsIntro.title">{content.painPointsIntro.title}</h2>
+      <p data-i18n="painPointsIntro.description">{content.painPointsIntro.description}</p>
+    </div>
+    <div class="card-grid card-grid--three">
+      {content.painPoints.map((item, index) => (
+        <article class="card">
+          <h3 data-i18n={`painPoints.${index}.title`}>{item.title}</h3>
+          <p class="card__label" data-i18n="ui.challengeLabel">{content.ui.challengeLabel}</p>
+          <p data-i18n={`painPoints.${index}.problem`}>{item.problem}</p>
+          <p class="card__label" data-i18n="ui.responseLabel">{content.ui.responseLabel}</p>
+          <p data-i18n={`painPoints.${index}.solution`}>{item.solution}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

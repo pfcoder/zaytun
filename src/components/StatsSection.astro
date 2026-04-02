@@ -1,0 +1,25 @@
+---
+import type { SiteContent } from '../lib/types';
+
+const { content } = Astro.props as { content: SiteContent };
+---
+
+<section class="section section--muted" id="about">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow" data-i18n="statsIntro.eyebrow">{content.statsIntro.eyebrow}</p>
+      <h2 data-i18n="statsIntro.title">{content.statsIntro.title}</h2>
+      <p data-i18n="statsIntro.description">{content.statsIntro.description}</p>
+    </div>
+    <div class="stats-grid">
+      {content.stats.map((item, index) => (
+        <article class="stat-card">
+          <strong class="stat-card__value" data-countup data-countup-value={item.value.replace(/[^\d]/g, '') || item.value} data-i18n={`stats.${index}.value`}>
+            {item.value}
+          </strong>
+          <span data-i18n={`stats.${index}.label`}>{item.label}</span>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
