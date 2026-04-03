@@ -1,6 +1,6 @@
 import type { Language, SiteContent } from '../lib/types';
 
-export const languages = ['en', 'ar', 'zh'] as const;
+export const languages = ['en', 'ar'] as const;
 export const defaultLanguage: Language = 'en';
 export const directionByLanguage: Record<Language, 'ltr' | 'rtl'> = {
   en: 'ltr',
