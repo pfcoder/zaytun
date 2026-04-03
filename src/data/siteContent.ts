@@ -158,10 +158,10 @@ export const siteContent: Record<Language, SiteContent> = {
       description: 'Version one uses direct contact paths instead of a connected form so the page can stay lean and credible.'
     },
     contacts: [
-      { label: 'Sales Email', value: 'sales@zaytungraphite.com', href: 'mailto:sales@zaytungraphite.com' },
-      { label: 'Technical Support', value: 'tech@zaytungraphite.com', href: 'mailto:tech@zaytungraphite.com' },
-      { label: 'Phone', value: '+971 4 000 0000', href: 'tel:+97140000000' },
-      { label: 'WhatsApp', value: '+971 50 000 0000', href: 'https://wa.me/971500000000' }
+      { label: 'Sales Email', value: 'contact@zaytun-ind.com', href: 'mailto:contact@zaytun-ind.com' },
+      { label: 'Technical Support', value: 'tech@zaytun-ind.com', href: 'mailto:tech@zaytun-ind.com' }
+      // { label: 'Phone', value: '+971 4 000 0000', href: 'tel:+97140000000' },
+      // { label: 'WhatsApp', value: '+971 50 000 0000', href: 'https://wa.me/971500000000' }
     ],
     footer: {
       dubaiLabel: 'Dubai Office',
@@ -169,9 +169,9 @@ export const siteContent: Record<Language, SiteContent> = {
       chinaLabel: 'Manufacturing Base',
       chinaValue: 'China graphite production and export operations',
       supportLabel: 'Support',
-      supportValue: 'tech@zaytungraphite.com',
-      socialLabel: 'LinkedIn',
-      socialValue: 'linkedin.com/company/zaytun-graphite',
+      supportValue: 'contact@zaytun-ind.com',
+      socialLabel: '',
+      socialValue: '',
       copyright: '© 2026 Zaytun Graphite. All rights reserved.'
     }
   },
@@ -324,10 +324,10 @@ export const siteContent: Record<Language, SiteContent> = {
       description: 'يعتمد الإصدار الأول على وسائل اتصال مباشرة بدلاً من نموذج متصل للحفاظ على بساطة وموثوقية الصفحة.'
     },
     contacts: [
-      { label: 'بريد المبيعات', value: 'sales@zaytungraphite.com', href: 'mailto:sales@zaytungraphite.com' },
-      { label: 'الدعم الفني', value: 'tech@zaytungraphite.com', href: 'mailto:tech@zaytungraphite.com' },
-      { label: 'الهاتف', value: '+971 4 000 0000', href: 'tel:+97140000000' },
-      { label: 'واتساب', value: '+971 50 000 0000', href: 'https://wa.me/971500000000' }
+      { label: 'بريد المبيعات', value: 'contact@zaytun-ind.com', href: 'mailto:contact@zaytun-ind.com' },
+      { label: 'الدعم الفني', value: 'tech@zaytun-ind.com', href: 'mailto:tech@zaytun-ind.com' }
+      // { label: 'الهاتف', value: '+971 4 000 0000', href: 'tel:+97140000000' },
+      // { label: 'واتساب', value: '+971 50 000 0000', href: 'https://wa.me/971500000000' }
     ],
     footer: {
       dubaiLabel: 'مكتب دبي',
@@ -335,9 +335,9 @@ export const siteContent: Record<Language, SiteContent> = {
       chinaLabel: 'قاعدة التصنيع',
       chinaValue: 'عمليات إنتاج الجرافيت والتصدير في الصين',
       supportLabel: 'الدعم',
-      supportValue: 'tech@zaytungraphite.com',
-      socialLabel: 'لينكدإن',
-      socialValue: 'linkedin.com/company/zaytun-graphite',
+      supportValue: 'tech@zaytun-ind.com',
+      socialLabel: '',
+      socialValue: '',
       copyright: '© 2026 زيتون جرافيت. جميع الحقوق محفوظة.'
     }
   },
@@ -490,10 +490,10 @@ export const siteContent: Record<Language, SiteContent> = {
       description: '首版使用直接联系路径，而不是接入式表单，以保持页面轻量和可信。'
     },
     contacts: [
-      { label: '销售邮箱', value: 'sales@zaytungraphite.com', href: 'mailto:sales@zaytungraphite.com' },
-      { label: '技术支持', value: 'tech@zaytungraphite.com', href: 'mailto:tech@zaytungraphite.com' },
-      { label: '电话', value: '+971 4 000 0000', href: 'tel:+97140000000' },
-      { label: 'WhatsApp', value: '+971 50 000 0000', href: 'https://wa.me/971500000000' }
+      { label: '销售邮箱', value: 'contact@zaytun-ind.com', href: 'mailto:contact@zaytun-ind.com' },
+      { label: '技术支持', value: 'tech@zaytun-ind.com', href: 'mailto:tech@zaytun-ind.com' },
+      // { label: '电话', value: '+971 4 000 0000', href: 'tel:+97140000000' }
+      // { label: 'WhatsApp', value: '+971 50 000 0000', href: 'https://wa.me/971500000000' }
     ],
     footer: {
       dubaiLabel: '迪拜办公室',
@@ -501,9 +501,9 @@ export const siteContent: Record<Language, SiteContent> = {
       chinaLabel: '制造基地',
       chinaValue: '中国石墨制造与出口运营',
       supportLabel: '支持',
-      supportValue: 'tech@zaytungraphite.com',
-      socialLabel: 'LinkedIn',
-      socialValue: 'linkedin.com/company/zaytun-graphite',
+      supportValue: 'tech@zaytun-ind.com',
+      socialLabel: '',
+      socialValue: '',
       copyright: '© 2026 Zaytun Graphite. 版权所有。'
     }
   }
