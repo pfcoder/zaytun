@@ -11,334 +11,408 @@ export const directionByLanguage: Record<Language, 'ltr' | 'rtl'> = {
 export const siteContent: Record<Language, SiteContent> = {
   en: {
     meta: {
-      title: 'Zaytun Graphite | Isostatic Graphite for Global Industry',
-      description: 'A modern industrial landing page for high-performance isostatic graphite serving PV, semiconductor, EDM, and advanced manufacturing markets.'
+      title: 'Zaytun L.L.C-FZ | Isostatic Graphite Parts, CNC Machining, Seals, Molds, Crucibles UAE',
+      description: 'Zaytun L.L.C-FZ provides isostatic graphite parts, CNC machining, seals, molds, crucibles, and custom graphite components in Dubai and across the UAE.'
     },
     ui: {
-      challengeLabel: 'Challenge',
-      responseLabel: 'Response',
-      graphiteGradeLabel: 'Graphite grade',
+      challengeLabel: 'Feature',
+      responseLabel: 'Details',
+      graphiteGradeLabel: 'Product line',
       dubaiMarker: 'Dubai',
-      chinaMarker: 'China'
+      chinaMarker: 'Factory'
     },
     header: {
-      brand: 'Zaytun Graphite',
+      brand: 'Zaytun L.L.C-FZ',
       nav: [
-        { label: 'About', href: '#about' },
+        { label: 'Home', href: '#top' },
+        { label: 'About Us', href: '#about' },
         { label: 'Products', href: '#products' },
+        { label: 'Machining Capabilities', href: '#technology' },
         { label: 'Applications', href: '#applications' },
-        { label: 'Technology', href: '#technology' },
-        { label: 'Contact', href: '#contact' }
+        { label: 'Why Choose Us', href: '#why-choose-us' },
+        { label: 'Projects', href: '#projects' },
+        { label: 'Contact Us', href: '#contact' }
       ],
       languages: {
         en: 'EN',
-        ar: 'AR',
+        ar: 'عربي',
         zh: '中文'
       }
     },
     hero: {
-      eyebrow: 'Dubai commercial hub. China manufacturing base.',
-      title: 'High-Performance Isostatic Graphite. Delivered Global.',
-      description: 'From PV to semiconductors, aerospace to EDM, Zaytun Graphite pairs production scale, process discipline, and responsive export support for demanding industrial buyers.',
-      primaryCta: { label: 'Request a Quote', href: '#contact' },
-      secondaryCta: { label: 'Explore Products', href: '#products' },
-      locationNote: 'Located for MENA access, backed by large-scale manufacturing in China.'
+      eyebrow: 'Zaytun L.L.C-FZ',
+      title: 'Isostatic Graphite Precision Parts Manufactured in Dubai',
+      description: 'Custom CNC machining for graphite seals, bearings, molds, crucibles, EDM electrodes, and industrial graphite components with fast local response.',
+      primaryCta: { label: 'Get Quote', href: '#contact' },
+      secondaryCta: { label: 'View Products', href: '#products' },
+      locationNote: 'Local factory support for UAE, Saudi Arabia, GCC, and Middle East industrial buyers.'
     },
     statsIntro: {
-      eyebrow: 'Trusted at industrial scale',
-      title: 'Built around consistency, throughput, and buyer confidence.',
-      description: 'The first release focuses on the numbers that matter most to technical and procurement teams.'
+      eyebrow: 'About Us',
+      title: 'Precision isostatic graphite machining for civilian and industrial applications.',
+      description: 'Based in Dubai, UAE, Zaytun L.L.C-FZ specializes in high-performance isostatic graphite products, custom CNC machining, and fast delivery for clients across the UAE, Saudi Arabia, GCC, and the wider Middle East.'
     },
     stats: [
-      { value: '20+', label: 'years of graphite innovation' },
-      { value: '38,400', label: 'tons annual output' },
-      { value: '34%', label: 'national fine-graphite market share' },
-      { value: '100+', label: 'PV customers served' }
+      { value: '±0.01mm', label: 'High Precision CNC tolerance' },
+      { value: 'Dubai', label: 'Local production and fast quotation' },
+      { value: 'High Purity', label: 'Premium isostatic graphite materials' },
+      { value: 'GCC', label: 'Regional support across UAE and the Middle East' }
     ],
     painPointsIntro: {
-      eyebrow: 'Buyer priorities',
-      title: 'Solve the issues that directly affect yield, service life, and delivery schedules.',
-      description: 'The page frames the company around practical outcomes instead of generic technical claims.'
+      eyebrow: 'Why Choose Us',
+      title: 'Practical strengths for buyers who need precision, speed, and dependable local support.',
+      description: 'This section turns the company advantages into concise buying reasons for technical teams and procurement teams.'
     },
     painPoints: [
       {
-        title: 'Purity that protects yield',
-        problem: 'Impurity variation can reduce process stability in high-value applications.',
-        solution: 'Ultra-high purity materials targeting 50 PPM or below help protect yield-sensitive production.'
+        title: 'Dubai Local Factory',
+        problem: 'Local UAE presence for faster coordination.',
+        solution: 'Direct communication from Dubai supports faster quotations, smoother revisions, and easier project follow-up.'
       },
       {
-        title: 'Longer hot-zone life',
-        problem: 'Short component life increases downtime and replacement cost.',
-        solution: 'High bulk density and strong mechanical performance support longer service life under demanding conditions.'
+        title: 'Fast Delivery & Response',
+        problem: 'Shorter turnaround for urgent industrial requirements.',
+        solution: 'Responsive quoting and local follow-up help buyers move from drawing review to delivery faster.'
       },
       {
-        title: 'Lead times you can plan around',
-        problem: 'Unreliable supply chains delay production and strain inventory planning.',
-        solution: 'Large-scale output and strategic stock help support faster response across export markets.'
+        title: 'High Precision CNC Machining',
+        problem: 'Tolerances down to ±0.01 mm for critical graphite parts.',
+        solution: 'CNC milling, turning, drilling, grinding, and polishing are configured for precision graphite machining.'
+      },
+      {
+        title: 'Customized Solutions',
+        problem: 'Production based on customer drawings and technical requirements.',
+        solution: 'Any size, shape, and geometry can be machined for both small-batch and mass-production orders.'
+      },
+      {
+        title: 'Stable Quality & Competitive Price',
+        problem: 'Reliable output without inflated sourcing cost.',
+        solution: 'High-purity isostatic graphite, controlled machining, and practical pricing help buyers balance quality and budget.'
+      },
+      {
+        title: 'Professional Technical Support',
+        problem: 'Better communication on drawings, applications, and processing details.',
+        solution: 'Technical guidance is available for seals, molds, crucibles, electrodes, and custom industrial graphite parts.'
       }
     ],
     productsIntro: {
-      eyebrow: 'Featured grades',
-      title: 'Core graphite grades for thermal, electrical, and precision industrial use.',
-      description: 'The launch page highlights four representative products with enough detail to support early buyer conversations.'
+      eyebrow: 'Products',
+      title: 'Six core product categories for industrial graphite machining and supply.',
+      description: 'The homepage focuses on the main product families buyers ask for most often, from sealing parts to custom machined graphite components.'
     },
     products: [
       {
-        name: 'WX-5',
-        summary: 'A high-density isostatic graphite grade positioned for demanding thermal-field applications.',
-        specs: ['Ultra-fine structure', 'High strength profile', 'Stable thermal behavior']
+        name: 'Graphite Seals & Bearings',
+        summary: 'Mechanical seals, seal rings, bushings, slides, and bearings designed for self-lubricating, high-temperature, and corrosion-resistant performance.',
+        specs: ['Used in pumps and desalination systems', 'Supports water treatment and HVAC equipment', 'Suitable for marine and industrial duty']
       },
       {
-        name: 'WX-3',
-        summary: 'A balanced grade for buyers who need reliable purity, machinability, and production consistency.',
-        specs: ['Fine grain', 'Controlled impurity level', 'Strong process repeatability']
+        name: 'Graphite Molds for Jewelry & Casting',
+        summary: 'Jewelry casting molds, gold and silver molds, plus continuous casting molds for copper and aluminum applications.',
+        specs: ['High surface smoothness', 'Easy demolding', 'Long service life']
       },
       {
-        name: 'EDM-200',
-        summary: 'A graphite grade aimed at EDM tooling where accuracy and wear behavior matter.',
-        specs: ['Precision machining support', 'Low wear tendency', 'Consistent electrode performance']
+        name: 'EDM Graphite Electrodes',
+        summary: 'High-precision graphite electrodes for mold making, automotive parts, and precision metal machining.',
+        specs: ['Low wear loss', 'High machining efficiency', 'Stable EDM performance']
       },
       {
-        name: 'SEM-HP',
-        summary: 'A high-purity option designed for semiconductor-adjacent process environments.',
-        specs: ['High purity positioning', 'Process cleanliness focus', 'Export-ready supply support']
+        name: 'Graphite Crucibles & Melting Tools',
+        summary: 'High-purity graphite crucibles and melting tools for metal melting, gold refining, jewelry casting, and laboratory use.',
+        specs: ['High purity material', 'Ultra-high temperature resistance', 'Suitable for precious metal processing']
+      },
+      {
+        name: 'Industrial Graphite Components',
+        summary: 'Graphite parts for heat dissipation, furnaces, insulation, conductivity, and industrial structural support.',
+        specs: ['Heat dissipation parts', 'Furnace and insulation components', 'Conductive and structural parts']
+      },
+      {
+        name: 'Custom Graphite Parts',
+        summary: 'Custom CNC machining according to customer drawings for specialized graphite components.',
+        specs: ['Any size and shape accepted', 'Built to technical requirements', 'Small and mass production available']
       }
     ],
     applicationsIntro: {
-      eyebrow: 'Industries served',
-      title: 'One material platform supporting multiple advanced manufacturing sectors.',
-      description: 'The landing page should make the company feel relevant across a broad industrial buyer set without becoming a full catalog.'
+      eyebrow: 'Applications',
+      title: 'Graphite solutions for process industries, casting, machinery, and thermal applications.',
+      description: 'The page shows where Zaytun products are used so buyers can quickly connect each product line to their operating environment.'
     },
     applications: [
-      { name: 'Photovoltaics', description: 'Graphite solutions for thermal-field and PV production environments.' },
-      { name: 'Semiconductors', description: 'High-purity support for process-sensitive manufacturing.' },
-      { name: 'EDM Mold Making', description: 'Precision graphite grades for electrode applications.' },
-      { name: 'Nuclear', description: 'Performance-focused materials for specialized engineering use cases.' },
-      { name: 'Metallurgy', description: 'Durable graphite components for heat-intensive industrial processes.' },
-      { name: 'Aerospace', description: 'Reliable materials for advanced, high-specification manufacturing chains.' }
+      { name: 'Oil & Gas', description: 'Graphite components for sealing, wear resistance, and high-temperature operating conditions.' },
+      { name: 'Water Desalination & Treatment', description: 'Seal rings, bearings, and related graphite parts for pumps and treatment systems.' },
+      { name: 'Jewelry & Gold Casting', description: 'Graphite molds and crucibles for precious metal melting, refining, and casting.' },
+      { name: 'Mechanical Equipment', description: 'Bushings, slides, bearings, and custom parts for industrial machinery.' },
+      { name: 'Automotive', description: 'Precision EDM electrodes and graphite machining for component and tooling workflows.' },
+      { name: 'Electronics & Heat Dissipation', description: 'Graphite parts used where thermal performance and conductivity matter.' },
+      { name: 'Industrial Furnaces', description: 'Furnace parts, insulation components, and heat-resistant graphite products.' },
+      { name: 'Chemical & Corrosion Resistance', description: 'Self-lubricating and corrosion-resistant graphite parts for harsh process environments.' }
     ],
     technologyIntro: {
-      eyebrow: 'Process and quality',
-      title: 'Technical credibility should come from process control, traceability, and disciplined quality messaging.',
-      description: 'The launch page uses concise proof-oriented statements instead of overwhelming visitors with dense documentation.'
+      eyebrow: 'Machining Capabilities',
+      title: 'Precision CNC processing for high-purity isostatic graphite parts.',
+      description: 'The capabilities section focuses on the actual machining services and production flexibility available to graphite buyers.'
     },
     technologyPoints: [
-      'Isostatic processing positioned around stability, density, and repeatable quality.',
-      'Quality systems messaging centered on inspection, traceability, and consistent batch control.',
-      'Production presentation should emphasize real manufacturing capability over abstract technology visuals.'
+      'CNC milling, turning, drilling, grinding, and polishing',
+      'Precision tolerance: ±0.01 mm',
+      'Materials: high purity isostatic graphite',
+      'Custom design and rapid prototyping',
+      'Small batch and mass production',
+      'Full-size processing supported'
     ],
     globalServiceIntro: {
-      eyebrow: 'Global service model',
-      title: 'Manufactured in China. Positioned through Dubai for regional coordination and export responsiveness.',
-      description: 'This section explains the Dubai role without pretending the launch site already includes a full logistics platform.'
+      eyebrow: 'Our Factory',
+      title: 'Local graphite machining support from Dubai with custom production flexibility.',
+      description: 'This section reinforces the factory role, response speed, and project support without turning the page into a full technical catalog.'
     },
     globalServicePoints: [
-      'Dubai supports commercial coordination across MENA, Africa, and Europe.',
-      'China-based manufacturing provides the scale and process depth behind supply continuity.',
-      'Messaging should reinforce faster regional access through Jebel Ali-linked export positioning.'
+      'Based in JAFZA and Dubai Industrial City for faster local business coordination.',
+      'Supports custom machining from customer drawings for seals, molds, crucibles, and industrial components.',
+      'Flexible for both urgent small batches and long-run production requirements.'
     ],
     proofIntro: {
-      eyebrow: 'Illustrative proof points',
-      title: 'Short buyer-facing outcomes that reinforce capability without naming real customers.',
-      description: 'These remain intentionally generic placeholders until real case material is available.'
+      eyebrow: 'Projects',
+      title: 'Precision graphite machining projects for Dubai and Middle East clients.',
+      description: 'Representative project themes show the practical product categories and applications supported by Zaytun L.L.C-FZ.'
     },
     proofPoints: [
       {
-        title: 'PV thermal-field performance',
-        detail: 'Illustrative customer outcome: hot-zone service life improved by roughly 30% after switching to a higher-performance grade.'
+        title: 'Mechanical seal and bearing machining',
+        detail: 'Custom-machined graphite seal rings, bushings, slides, and bearings for pumps, desalination, and industrial equipment.'
       },
       {
-        title: 'Purity-sensitive qualification support',
-        detail: 'Illustrative customer outcome: process validation improved after tighter impurity control and more stable batch consistency.'
+        title: 'Jewelry casting molds and crucibles',
+        detail: 'Graphite molds for gold and silver casting together with crucibles and melting tools for refining and production use.'
+      },
+      {
+        title: 'EDM and industrial graphite components',
+        detail: 'Precision EDM electrodes and structural graphite parts produced to drawing for automotive, furnace, and thermal applications.'
       }
     ],
     contactIntro: {
-      eyebrow: 'Start the conversation',
-      title: 'Built for serious inquiries, sourcing conversations, and export-ready follow-up.',
-      description: 'Version one uses direct contact paths instead of a connected form so the page can stay lean and credible.'
+      eyebrow: 'Contact Us',
+      title: 'Request a quote or send your drawing for custom graphite machining.',
+      description: 'Reach out for graphite seals, molds, crucibles, EDM electrodes, or custom machined parts. English and Arabic support are both available.'
     },
     contacts: [
-      { label: 'Sales Email', value: 'contact@zaytun-ind.com', href: 'mailto:contact@zaytun-ind.com' },
-      { label: 'Technical Support', value: 'tech@zaytun-ind.com', href: 'mailto:tech@zaytun-ind.com' }
-      // { label: 'Phone', value: '+971 4 000 0000', href: 'tel:+97140000000' },
-      // { label: 'WhatsApp', value: '+971 50 000 0000', href: 'https://wa.me/971500000000' }
+      { label: 'Address', value: 'JAFZA / Dubai Industrial City, UAE', href: 'https://maps.google.com/?q=JAFZA%20Dubai%20Industrial%20City%20UAE' },
+      { label: 'Email', value: 'contact@zaytun-ind.com', href: 'mailto:contact@zaytun-ind.com' },
+      { label: 'Working Hours', value: 'Saturday – Thursday: 8:00 AM – 06:00 PM', href: '#contact' },
+      { label: 'Languages', value: 'EN / عربي', href: '#top' }
     ],
     footer: {
-      dubaiLabel: 'Dubai Office',
-      dubaiValue: 'Dubai Silicon Oasis, Dubai, UAE',
-      chinaLabel: 'Manufacturing Base',
-      chinaValue: 'China graphite production and export operations',
-      supportLabel: 'Support',
-      supportValue: 'contact@zaytun-ind.com',
+      dubaiLabel: 'Address',
+      dubaiValue: 'JAFZA / Dubai Industrial City, UAE',
+      chinaLabel: 'Email',
+      chinaValue: 'contact@zaytun-ind.com',
+      supportLabel: 'Working Hours',
+      supportValue: 'Saturday – Thursday: 8:00 AM – 06:00 PM',
       socialLabel: '',
       socialValue: '',
-      copyright: '© 2026 Zaytun Graphite. All rights reserved.'
+      copyright: '© 2026 Zaytun L.L.C-FZ. All Rights Reserved. Isostatic Graphite Precision CNC Machining | Dubai - UAE'
     }
   },
   ar: {
     meta: {
-      title: 'زيتون جرافيت | جرافيت متساوي الضغط للصناعة العالمية',
-      description: 'صفحة صناعية حديثة لمنتجات الجرافيت متساوي الضغط الموجهة لقطاعات الطاقة الشمسية وأشباه الموصلات والتصنيع المتقدم.'
+      title: 'زيتون ذ.م.م | قطع جرافيت متساوي الضغط ، تصنيع سى ان سى ، أختام ، قوالب ، أوعية الإمارات',
+      description: 'زيتون ذ.م.م تقدم قطع جرافيت متساوي الضغط، وتصنيع سى ان سى، وأختام، وقوالب، وأوعية، وقطع جرافيت مخصصة في دبي وعبر الإمارات.'
     },
     ui: {
-      challengeLabel: 'التحدي',
-      responseLabel: 'الاستجابة',
-      graphiteGradeLabel: 'درجة الجرافيت',
+      challengeLabel: 'الميزة',
+      responseLabel: 'التفاصيل',
+      graphiteGradeLabel: 'فئة المنتج',
       dubaiMarker: 'دبي',
-      chinaMarker: 'الصين'
+      chinaMarker: 'المصنع'
     },
     header: {
-      brand: 'زيتون جرافيت',
+      brand: 'زيتون ذ.م.م',
       nav: [
+        { label: 'الرئيسية', href: '#top' },
         { label: 'من نحن', href: '#about' },
         { label: 'المنتجات', href: '#products' },
+        { label: 'قدرات التصنيع', href: '#technology' },
         { label: 'التطبيقات', href: '#applications' },
-        { label: 'التقنية', href: '#technology' },
+        { label: 'لماذا تختارنا', href: '#why-choose-us' },
+        { label: 'المشاريع', href: '#projects' },
         { label: 'اتصل بنا', href: '#contact' }
       ],
       languages: {
         en: 'EN',
-        ar: 'AR',
+        ar: 'عربي',
         zh: '中文'
       }
     },
     hero: {
-      eyebrow: 'مركز تجاري في دبي وقاعدة تصنيع في الصين.',
-      title: 'جرافيت متساوي الضغط عالي الأداء. توريد عالمي موثوق.',
-      description: 'من الطاقة الشمسية إلى أشباه الموصلات، ومن الطيران إلى EDM، تجمع زيتون جرافيت بين القدرة الإنتاجية والانضباط التشغيلي والدعم التصديري السريع للمشترين الصناعيين.',
-      primaryCta: { label: 'اطلب عرض سعر', href: '#contact' },
-      secondaryCta: { label: 'استكشف المنتجات', href: '#products' },
-      locationNote: 'وصول أسرع إلى أسواق الشرق الأوسط وشمال أفريقيا بدعم من تصنيع واسع النطاق في الصين.'
+      eyebrow: 'زيتون ذ.م.م',
+      title: 'قطع جرافيت متساوي الضغط الدقيقة تصنيعها في دبي',
+      description: 'تصنيع سى ان سى مخصص لأختام الجرافيت والمحامل والقوالب والأوعية وأقطاب EDM ومكونات الجرافيت الصناعية مع استجابة محلية سريعة.',
+      primaryCta: { label: 'الحصول على عرض سعر', href: '#contact' },
+      secondaryCta: { label: 'عرض المنتجات', href: '#products' },
+      locationNote: 'دعم مصنع محلي لعملاء الإمارات والسعودية والخليج ومنطقة الشرق الأوسط.'
     },
     statsIntro: {
-      eyebrow: 'ثقة على نطاق صناعي',
-      title: 'التركيز على الثبات والإنتاجية وما يمنح فرق الشراء الثقة.',
-      description: 'الإصدار الأول يبرز الأرقام التي تهم الفرق الفنية وفرق التوريد.'
+      eyebrow: 'من نحن',
+      title: 'تصنيع دقيق للجرافيت متساوي الضغط للاستخدامات المدنية والصناعية.',
+      description: 'تقع زيتون ذ.م.م في دبي، الإمارات العربية المتحدة، وهي مصنع محلي متخصص في التصنيع الدقيق بسى ان سى لمنتجات الجرافيت المتساوي الضغط عالي الأداء مع خدمات مخصصة وتسليم سريع لعملاء الإمارات والسعودية والخليج وجميع منطقة الشرق الأوسط.'
     },
     stats: [
-      { value: '20+', label: 'سنة من خبرة الجرافيت' },
-      { value: '38,400', label: 'طن إنتاج سنوي' },
-      { value: '34%', label: 'حصة سوقية وطنية للجرافيت الدقيق' },
-      { value: '100+', label: 'عميل في قطاع الطاقة الشمسية' }
+      { value: '±0.01 مم', label: 'دقة تصنيع سى ان سى عالية' },
+      { value: 'دبي', label: 'إنتاج محلي وعرض سعر سريع' },
+      { value: 'نقاء عال', label: 'جرافيت متساوي الضغط عالي الجودة' },
+      { value: 'الخليج', label: 'دعم إقليمي للإمارات والشرق الأوسط' }
     ],
     painPointsIntro: {
-      eyebrow: 'أولويات المشتري',
-      title: 'معالجة العوامل التي تؤثر مباشرة على العائد التشغيلي والعمر الافتراضي ومواعيد التوريد.',
-      description: 'تقدم الصفحة الشركة من خلال نتائج عملية بدلاً من ادعاءات تقنية عامة.'
+      eyebrow: 'لماذا تختارنا',
+      title: 'مزايا عملية للمشترين الذين يحتاجون إلى دقة وسرعة ودعم محلي موثوق.',
+      description: 'هذا القسم يحول مزايا الشركة إلى أسباب شراء واضحة للفرق الفنية وفرق المشتريات.'
     },
     painPoints: [
       {
-        title: 'نقاء يحافظ على العائد',
-        problem: 'تفاوت الشوائب قد يقلل من استقرار العمليات في التطبيقات عالية القيمة.',
-        solution: 'مواد عالية النقاء تستهدف 50 جزءاً في المليون أو أقل لحماية العمليات الحساسة للعائد.'
+        title: 'مصنع محلي في دبي',
+        problem: 'وجود محلي في الإمارات لتنسيق أسرع.',
+        solution: 'التواصل المباشر من دبي يدعم عروض أسعار أسرع ومراجعات أسهل ومتابعة أوضح للمشاريع.'
       },
       {
-        title: 'عمر أطول للمناطق الحرارية',
-        problem: 'قصر عمر المكونات يزيد التوقفات وتكاليف الاستبدال.',
-        solution: 'الكثافة العالية والأداء الميكانيكي القوي يدعمان عمراً تشغيلياً أطول في الظروف الصعبة.'
+        title: 'تسليم سريع واستجابة فورية',
+        problem: 'زمن أقصر للطلبات الصناعية العاجلة.',
+        solution: 'الاستجابة السريعة في التسعير والمتابعة المحلية تساعد العملاء على الانتقال من الرسم الفني إلى التسليم بسرعة أكبر.'
       },
       {
-        title: 'مواعيد توريد يمكن التخطيط لها',
-        problem: 'سلاسل التوريد غير المستقرة تؤخر الإنتاج وتضغط على المخزون.',
-        solution: 'القدرة الإنتاجية الكبيرة والمخزون الاستراتيجي يدعمان استجابة أسرع للأسواق التصديرية.'
+        title: 'تصنيع سى ان سى دقيق عالي',
+        problem: 'دقة تصل إلى ±0.01 ملليمتر لقطع الجرافيت الحرجة.',
+        solution: 'يتم تنفيذ التفريز والدوران والحفر والطحن والصقل لتلبية متطلبات التصنيع الدقيق للجرافيت.'
+      },
+      {
+        title: 'حلول مخصصة',
+        problem: 'إنتاج حسب رسومات العملاء والمتطلبات الفنية.',
+        solution: 'يمكن تصنيع أي حجم أو شكل أو هندسة معقدة للطلبات الصغيرة والإنتاج الكمي.'
+      },
+      {
+        title: 'جودة مستقرة وسعر تنافسي',
+        problem: 'مخرجات موثوقة دون رفع غير ضروري في التكلفة.',
+        solution: 'الجرافيت عالي النقاء والتصنيع المنضبط والتسعير العملي تساعد العملاء على موازنة الجودة والميزانية.'
+      },
+      {
+        title: 'دعم فني محترف',
+        problem: 'تواصل أفضل حول الرسومات والتطبيقات وتفاصيل المعالجة.',
+        solution: 'يتوفر دعم فني للأختام والقوالب والأوعية والأقطاب وقطع الجرافيت الصناعية المخصصة.'
       }
     ],
     productsIntro: {
-      eyebrow: 'درجات مختارة',
-      title: 'درجات جرافيت أساسية للتطبيقات الحرارية والكهربائية والصناعية الدقيقة.',
-      description: 'تعرض الصفحة أربع درجات تمثيلية تكفي لبدء محادثات الشراء الفنية.'
+      eyebrow: 'المنتجات',
+      title: 'ست فئات رئيسية لمنتجات الجرافيت الصناعية والتصنيع المخصص.',
+      description: 'تركز الصفحة الرئيسية على عائلات المنتجات الأساسية التي يطلبها المشترون غالباً، من قطع الإحكام إلى مكونات الجرافيت المصنعة حسب الطلب.'
     },
     products: [
       {
-        name: 'WX-5',
-        summary: 'درجة جرافيت عالية الكثافة للتطبيقات الحرارية المتطلبة.',
-        specs: ['بنية دقيقة جداً', 'مستوى قوة مرتفع', 'استقرار حراري موثوق']
+        name: 'أختام ومحامل جرافيت',
+        summary: 'أختام ميكانيكية وحلقات أختام وبطانات ومنزلقات ومحامل مصممة للتشحيم الذاتي ومقاومة الحرارة والتآكل.',
+        specs: ['تستخدم في المضخات وأنظمة إزالة الملح', 'مناسبة لمعالجة المياه ومعدات التكييف', 'ملائمة للمعدات البحرية والصناعية']
       },
       {
-        name: 'WX-3',
-        summary: 'خيار متوازن للنقاء وقابلية التشغيل وثبات الإنتاج.',
-        specs: ['حبيبات دقيقة', 'تحكم في الشوائب', 'ثبات عال في التكرار']
+        name: 'قوالب جرافيت للمجوهرات والصب',
+        summary: 'قوالب صب للمجوهرات والذهب والفضة، إضافة إلى قوالب الصب المستمر للنحاس والألومنيوم.',
+        specs: ['نعومة سطح عالية', 'سهولة الفصل', 'عمر خدمة طويل']
       },
       {
-        name: 'EDM-200',
-        summary: 'درجة موجهة لأدوات EDM حيث الدقة وسلوك التآكل مهمان.',
-        specs: ['دعم للتشغيل الدقيق', 'ميل منخفض للتآكل', 'أداء ثابت للأقطاب']
+        name: 'أقطاب جرافيت لتصنيع EDM',
+        summary: 'أقطاب جرافيت دقيقة لصناعة القوالب وقطع السيارات وتشغيل المعادن بدقة عالية.',
+        specs: ['فقد منخفض', 'كفاءة تشغيل عالية', 'أداء ثابت في EDM']
       },
       {
-        name: 'SEM-HP',
-        summary: 'خيار عالي النقاء لبيئات التصنيع المرتبطة بأشباه الموصلات.',
-        specs: ['تموضع عالي النقاء', 'تركيز على نظافة العمليات', 'دعم توريد جاهز للتصدير']
+        name: 'أوعية جرافيت وأدوات الذوبان',
+        summary: 'أوعية جرافيت عالية النقاء وأدوات ذوبان لاستخدامات صهر المعادن وتنقية الذهب وصب المجوهرات والاستخدام المعملي.',
+        specs: ['مادة عالية النقاء', 'مقاومة لدرجات حرارة عالية جداً', 'مناسبة لمعالجة المعادن الثمينة']
+      },
+      {
+        name: 'مكونات جرافيت صناعية',
+        summary: 'قطع جرافيت لتبديد الحرارة والأفران والعزل والتوصيل والدعم الهيكلي الصناعي.',
+        specs: ['قطع تبديد حرارة', 'مكونات للأفران والعزل', 'قطع موصلة وهيكلية']
+      },
+      {
+        name: 'قطع جرافيت مخصصة',
+        summary: 'تصنيع سى ان سى مخصص حسب رسومات العملاء لقطع جرافيت متخصصة.',
+        specs: ['أي حجم أو شكل مقبول', 'تصنيع وفق المتطلبات الفنية', 'إنتاج صغير وكبير متاح']
       }
     ],
     applicationsIntro: {
-      eyebrow: 'القطاعات المخدومة',
-      title: 'منصة مواد واحدة تدعم عدداً من قطاعات التصنيع المتقدم.',
-      description: 'تعطي الصفحة انطباعاً بملاءمة الشركة لعدة قطاعات من دون أن تتحول إلى كتالوج كامل.'
+      eyebrow: 'مجالات الاستخدام',
+      title: 'حلول جرافيت لقطاعات العمليات الصناعية والصب والمعدات والتطبيقات الحرارية.',
+      description: 'يوضح هذا القسم أماكن استخدام منتجات زيتون حتى يتمكن المشترون من ربط كل فئة منتج ببيئة التشغيل الخاصة بهم بسرعة.'
     },
     applications: [
-      { name: 'الطاقة الشمسية', description: 'حلول جرافيت لبيئات الإنتاج والحقول الحرارية.' },
-      { name: 'أشباه الموصلات', description: 'دعم عالي النقاء للعمليات الحساسة.' },
-      { name: 'قوالب EDM', description: 'درجات دقيقة لتطبيقات الأقطاب.' },
-      { name: 'الطاقة النووية', description: 'مواد موجهة لاستخدامات هندسية متخصصة.' },
-      { name: 'علم المعادن', description: 'مكونات جرافيت متينة للعمليات الحرارية المكثفة.' },
-      { name: 'الطيران', description: 'مواد موثوقة لسلاسل تصنيع عالية المواصفات.' }
+      { name: 'النفط والغاز', description: 'مكونات جرافيت للإحكام ومقاومة التآكل والعمل في درجات الحرارة العالية.' },
+      { name: 'إزالة الملح ومعالجة المياه', description: 'حلقات أختام ومحامل وقطع جرافيت للمضخات وأنظمة المعالجة.' },
+      { name: 'المجوهرات وصب الذهب', description: 'قوالب جرافيت وأوعية لصهر المعادن الثمينة وتنقيتها وصبها.' },
+      { name: 'المعدات الميكانيكية', description: 'بطانات ومنزلقات ومحامل وقطع مخصصة للمعدات الصناعية.' },
+      { name: 'السيارات', description: 'أقطاب EDM دقيقة وتصنيع جرافيت للقوالب وعمليات المكونات.' },
+      { name: 'الإلكترونيات وتبديد الحرارة', description: 'قطع جرافيت تستخدم عندما تكون الإدارة الحرارية والتوصيل مهمة.' },
+      { name: 'الأفران الصناعية', description: 'قطع للأفران وعناصر عزل ومنتجات جرافيت مقاومة للحرارة.' },
+      { name: 'الكيمياء والمقاومة للتآكل', description: 'قطع جرافيت ذات تشحيم ذاتي ومقاومة للتآكل لبيئات التشغيل القاسية.' }
     ],
     technologyIntro: {
-      eyebrow: 'العملية والجودة',
-      title: 'المصداقية التقنية يجب أن تظهر من خلال التحكم في العملية والتتبع ورسائل الجودة المنضبطة.',
-      description: 'يعتمد الإصدار الأول على عبارات موجزة قائمة على الثقة بدلاً من وثائق كثيفة.'
+      eyebrow: 'قدرات التصنيع',
+      title: 'معالجة دقيقة بسى ان سى لقطع الجرافيت متساوي الضغط عالية النقاء.',
+      description: 'يركز قسم القدرات على خدمات التصنيع الفعلية ومرونة الإنتاج المتاحة لمشتري الجرافيت.'
     },
     technologyPoints: [
-      'التموضع حول المعالجة المتساوية الضغط من أجل الثبات والكثافة وجودة قابلة للتكرار.',
-      'رسائل الجودة تركز على الفحص والتتبع والتحكم المستمر في الدفعات.',
-      'العرض البصري يجب أن يبرز القدرة التصنيعية الحقيقية لا الرسومات التقنية المجردة.'
+      'تصنيع سى ان سى بالتحريك والدوران والحفر والطحن والصقل',
+      'دقة التصنيع: ±0.01 ملليمتر',
+      'المواد: جرافيت متساوي الضغط عالي النقاء',
+      'تصميم مخصص ونماذج أولية سريعة',
+      'إنتاج دفعات صغيرة وإنتاج ضخم',
+      'دعم تصنيع كافة الأحجام'
     ],
     globalServiceIntro: {
-      eyebrow: 'نموذج الخدمة العالمي',
-      title: 'تصنيع في الصين وتموضع في دبي لتنسيق الأعمال وتسريع الاستجابة التصديرية.',
-      description: 'يوضح هذا القسم دور دبي من دون الإيحاء بوجود منصة لوجستية كاملة في الإصدار الأول.'
+      eyebrow: 'مصنعنا',
+      title: 'دعم محلي لتصنيع الجرافيت من دبي مع مرونة في الإنتاج المخصص.',
+      description: 'يعزز هذا القسم دور المصنع وسرعة الاستجابة ودعم المشاريع دون تحويل الصفحة إلى كتالوج تقني كامل.'
     },
     globalServicePoints: [
-      'دبي تدعم التنسيق التجاري عبر الشرق الأوسط وأفريقيا وأوروبا.',
-      'التصنيع في الصين يوفر الحجم والعمق التشغيلي لاستمرارية الإمداد.',
-      'الرسالة التسويقية تؤكد سرعة الوصول الإقليمي عبر تموضع تصديري مرتبط بجبل علي.'
+      'العمل من خلال جبل علي ومدينة دبي الصناعية لتنسيق أعمال محلي أسرع.',
+      'دعم التصنيع المخصص حسب الرسومات للأختام والقوالب والأوعية والمكونات الصناعية.',
+      'مرونة للطلبات العاجلة الصغيرة ومتطلبات الإنتاج المستمر طويلة المدى.'
     ],
     proofIntro: {
-      eyebrow: 'أمثلة توضيحية',
-      title: 'نتائج موجزة تعزز الثقة من دون ذكر أسماء عملاء حقيقيين.',
-      description: 'تبقى هذه الأمثلة مؤقتة وعامة حتى تتوفر مواد حالات حقيقية.'
+      eyebrow: 'المشاريع',
+      title: 'مشاريع تصنيع قطع جرافيت دقيقة لعملاء دبي والشرق الأوسط.',
+      description: 'تعرض أمثلة المشاريع فئات المنتجات والتطبيقات العملية التي تدعمها زيتون ذ.م.م.'
     },
     proofPoints: [
       {
-        title: 'أداء الحقول الحرارية للطاقة الشمسية',
-        detail: 'نتيجة توضيحية: تحسن عمر الخدمة بنحو 30% بعد التحول إلى درجة أعلى أداء.'
+        title: 'تصنيع أختام ومحامل ميكانيكية',
+        detail: 'تصنيع حلقات أختام وبطانات ومنزلقات ومحامل جرافيت للمضخات وإزالة الملح والمعدات الصناعية.'
       },
       {
-        title: 'دعم الاعتماد في البيئات الحساسة للنقاء',
-        detail: 'نتيجة توضيحية: تحسن التحقق التشغيلي مع تشديد التحكم في الشوائب وثبات الدفعات.'
+        title: 'قوالب مجوهرات وأوعية صهر',
+        detail: 'قوالب جرافيت لصب الذهب والفضة مع أوعية وأدوات ذوبان لاستخدامات التنقية والإنتاج.'
+      },
+      {
+        title: 'أقطاب EDM ومكونات صناعية',
+        detail: 'إنتاج أقطاب EDM دقيقة وقطع جرافيت هيكلية حسب الرسومات لتطبيقات السيارات والأفران والتبديد الحراري.'
       }
     ],
     contactIntro: {
-      eyebrow: 'ابدأ التواصل',
-      title: 'واجهة مهيأة للاستفسارات الجادة والمحادثات الفنية وطلبات التوريد التصديرية.',
-      description: 'يعتمد الإصدار الأول على وسائل اتصال مباشرة بدلاً من نموذج متصل للحفاظ على بساطة وموثوقية الصفحة.'
+      eyebrow: 'اتصل بنا',
+      title: 'اطلب عرض سعر أو أرسل الرسم الفني للتصنيع المخصص.',
+      description: 'تواصل معنا بخصوص أختام الجرافيت والقوالب والأوعية وأقطاب EDM وقطع الجرافيت المصنعة حسب الطلب. الدعم متاح بالإنجليزية والعربية.'
     },
     contacts: [
-      { label: 'بريد المبيعات', value: 'contact@zaytun-ind.com', href: 'mailto:contact@zaytun-ind.com' },
-      { label: 'الدعم الفني', value: 'tech@zaytun-ind.com', href: 'mailto:tech@zaytun-ind.com' }
-      // { label: 'الهاتف', value: '+971 4 000 0000', href: 'tel:+97140000000' },
-      // { label: 'واتساب', value: '+971 50 000 0000', href: 'https://wa.me/971500000000' }
+      { label: 'العنوان', value: 'جافزا / مدينة دبي الصناعية، الإمارات', href: 'https://maps.google.com/?q=JAFZA%20Dubai%20Industrial%20City%20UAE' },
+      { label: 'البريد الإلكتروني', value: 'contact@zaytun-ind.com', href: 'mailto:contact@zaytun-ind.com' },
+      { label: 'ساعات العمل', value: 'السبت إلى الخميس: 8:00 صباحاً – 06:00 مساءً', href: '#contact' },
+      { label: 'اللغات', value: 'EN / عربي', href: '#top' }
     ],
     footer: {
-      dubaiLabel: 'مكتب دبي',
-      dubaiValue: 'واحة دبي للسيليكون، دبي، الإمارات',
-      chinaLabel: 'قاعدة التصنيع',
-      chinaValue: 'عمليات إنتاج الجرافيت والتصدير في الصين',
-      supportLabel: 'الدعم',
-      supportValue: 'tech@zaytun-ind.com',
+      dubaiLabel: 'العنوان',
+      dubaiValue: 'جافزا / مدينة دبي الصناعية، الإمارات',
+      chinaLabel: 'البريد الإلكتروني',
+      chinaValue: 'contact@zaytun-ind.com',
+      supportLabel: 'ساعات العمل',
+      supportValue: 'السبت إلى الخميس: 8:00 صباحاً – 06:00 مساءً',
       socialLabel: '',
       socialValue: '',
-      copyright: '© 2026 زيتون جرافيت. جميع الحقوق محفوظة.'
+      copyright: '© 2026 زيتون ذ.م.م. جميع الحقوق محفوظة. تصنيع جرافيت متساوي الضغط دقيق بسى ان سى | دبي - الإمارات العربية المتحدة'
     }
   },
   zh: {
