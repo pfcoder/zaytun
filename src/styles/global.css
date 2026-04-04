@@ -191,8 +191,9 @@ button {
   overflow: hidden;
   padding: 6rem 0 5rem;
   background:
-    radial-gradient(circle at top right, rgba(0, 102, 204, 0.2), transparent 28%),
-    linear-gradient(135deg, var(--color-navy-950), var(--color-navy-900) 50%, #15395e 100%);
+    linear-gradient(90deg, rgba(7, 26, 46, 0.8), rgba(7, 26, 46, 0.46)),
+    linear-gradient(180deg, rgba(7, 26, 46, 0.18), rgba(7, 26, 46, 0.6)),
+    url('/images/bj.jpg') center center / cover no-repeat;
   color: var(--color-white);
 }
 
@@ -200,7 +201,9 @@ button {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(7, 26, 46, 0.3), rgba(7, 26, 46, 0));
+  background:
+    radial-gradient(circle at 78% 24%, rgba(232, 93, 4, 0.18), transparent 24%),
+    linear-gradient(180deg, rgba(7, 26, 46, 0.08), rgba(7, 26, 46, 0.28));
   pointer-events: none;
 }
 
@@ -208,7 +211,7 @@ button {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(18rem, 0.8fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 2rem;
   align-items: end;
 }
@@ -258,10 +261,7 @@ button {
 }
 
 .hero__visual {
-  display: grid;
-  grid-template-columns: 1fr 0.75fr;
-  gap: 1rem;
-  min-height: 29rem;
+  display: none;
 }
 
 .hero__visual-panel {
@@ -389,9 +389,8 @@ button {
   position: relative;
   min-height: 20rem;
   background:
-    radial-gradient(circle at 18% 18%, rgba(0, 102, 204, 0.12), transparent 28%),
-    radial-gradient(circle at 78% 20%, rgba(232, 93, 4, 0.08), transparent 24%),
-    linear-gradient(180deg, #f7fafc, #e4edf5);
+    linear-gradient(180deg, rgba(7, 26, 46, 0.1), rgba(7, 26, 46, 0.28)),
+    url('/images/g.jpg') center center / cover no-repeat;
   border: 1px solid rgba(216, 224, 232, 0.9);
   overflow: hidden;
 }
@@ -400,11 +399,10 @@ button {
   content: '';
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(10, 37, 64, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(10, 37, 64, 0.05) 1px, transparent 1px);
-  background-size: 2.4rem 2.4rem;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent 90%);
+  background:
+    radial-gradient(circle at 18% 18%, rgba(0, 102, 204, 0.14), transparent 28%),
+    radial-gradient(circle at 78% 20%, rgba(232, 93, 4, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(7, 26, 46, 0.08), rgba(7, 26, 46, 0.18));
 }
 
 .map-card__svg {
@@ -416,9 +414,7 @@ button {
 }
 
 .map-card__landmasses path {
-  fill: rgba(10, 37, 64, 0.1);
-  stroke: rgba(10, 37, 64, 0.14);
-  stroke-width: 1.8;
+  display: none;
 }
 
 .map-card__route-glow {

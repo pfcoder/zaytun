@@ -19,7 +19,7 @@ export const siteContent: Record<Language, SiteContent> = {
       responseLabel: 'Details',
       graphiteGradeLabel: 'Product line',
       dubaiMarker: 'Dubai',
-      chinaMarker: 'Factory'
+      chinaMarker: 'Beijing'
     },
     header: {
       brand: 'Zaytun L.L.C-FZ',
@@ -222,7 +222,7 @@ export const siteContent: Record<Language, SiteContent> = {
       responseLabel: 'التفاصيل',
       graphiteGradeLabel: 'فئة المنتج',
       dubaiMarker: 'دبي',
-      chinaMarker: 'المصنع'
+      chinaMarker: 'بكين'
     },
     header: {
       brand: 'زيتون ذ.م.م',
@@ -425,7 +425,7 @@ export const siteContent: Record<Language, SiteContent> = {
       responseLabel: '解决方案',
       graphiteGradeLabel: '石墨牌号',
       dubaiMarker: '迪拜',
-      chinaMarker: '中国'
+      chinaMarker: '北京'
     },
     header: {
       brand: 'Zaytun Graphite',
