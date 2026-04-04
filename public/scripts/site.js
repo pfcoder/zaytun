@@ -4,6 +4,12 @@ const directionByLanguage = {
   zh: 'ltr'
 };
 
+const backToTopLabelByLanguage = {
+  en: 'Back to top',
+  ar: 'العودة إلى الأعلى',
+  zh: '返回顶部'
+};
+
 const defaultLanguage = 'en';
 
 function setHeaderState(header) {
@@ -12,6 +18,30 @@ function setHeaderState(header) {
   }
 
   header.classList.toggle('is-scrolled', window.scrollY > 16);
+}
+
+function setBackToTopLabel(button, language) {
+  if (!button) {
+    return;
+  }
+
+  const label = backToTopLabelByLanguage[language] || backToTopLabelByLanguage[defaultLanguage];
+
+  button.setAttribute('aria-label', label);
+  button.title = label;
+}
+
+function setBackToTopState(button, hero) {
+  if (!button) {
+    return;
+  }
+
+  const revealPoint = hero ? hero.offsetHeight * 0.55 : window.innerHeight * 0.7;
+  const isVisible = window.scrollY > revealPoint;
+
+  button.classList.toggle('is-visible', isVisible);
+  button.setAttribute('aria-hidden', String(!isVisible));
+  button.tabIndex = isVisible ? 0 : -1;
 }
 
 function animateCount(node) {
@@ -98,6 +128,7 @@ function getValueByPath(content, language, path) {
 
 function applyLanguage(language, content, root, triggers) {
   const nextContent = content[language];
+  const backToTop = document.querySelector('[data-back-to-top]');
 
   document.documentElement.lang = language;
   document.documentElement.dir = directionByLanguage[language];
@@ -131,11 +162,15 @@ function applyLanguage(language, content, root, triggers) {
     trigger.classList.toggle('is-active', isActive);
     trigger.setAttribute('aria-pressed', String(isActive));
   });
+
+  setBackToTopLabel(backToTop, language);
 }
 
 function setupSiteInteractions() {
   const root = document.querySelector('[data-language-root]');
   const header = document.querySelector('[data-site-header]');
+  const hero = document.querySelector('.hero');
+  const backToTop = document.querySelector('[data-back-to-top]');
 
   if (!root) {
     return;
@@ -149,6 +184,10 @@ function setupSiteInteractions() {
 
   const content = JSON.parse(rawContent);
   const triggers = Array.from(document.querySelectorAll('[data-language-trigger]'));
+  const updateChrome = () => {
+    setHeaderState(header);
+    setBackToTopState(backToTop, hero);
+  };
 
   triggers.forEach((trigger) => {
     trigger.addEventListener('click', () => {
@@ -162,9 +201,18 @@ function setupSiteInteractions() {
     });
   });
 
-  window.addEventListener('scroll', () => setHeaderState(header), { passive: true });
+  if (backToTop) {
+    backToTop.addEventListener('click', () => {
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  setHeaderState(header);
+      window.scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
+    });
+  }
+
+  window.addEventListener('scroll', updateChrome, { passive: true });
+  window.addEventListener('resize', updateChrome);
+
+  updateChrome();
   applyLanguage(defaultLanguage, content, root, triggers);
   setupCountup();
 }
