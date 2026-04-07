@@ -2,10 +2,10 @@
 
 一、网站全局信息
 1. 网站名称
-EN: Zaytun L.L.C-FZ | Isostatic Graphite Precision Machining Dubai
+EN: Zaytun | Isostatic Graphite Precision Machining Dubai
 AR: زيتون ذ.م.م - ممنوعة مسؤولية | تصنيع جرافيت متساوي الضغط دقيق دبي
 2. 标题 Title（SEO）
-EN: Zaytun L.L.C-FZ | Isostatic Graphite Parts, CNC Machining, Seals, Molds, Crucibles UAE
+EN: Zaytun | Isostatic Graphite Parts, CNC Machining, Seals, Molds, Crucibles UAE
 AR: زيتون ذ.م.م | قطع جرافيت متساوي الضغط ، تصنيع سى ان سى ، أختام ، قوالب ، أوعية الإمارات
 3. 联系方式（预留位，你直接填）
 Address: JAFZA / Dubai Industrial City, UAE
@@ -48,7 +48,7 @@ EN: Premium Isostatic Graphite | High PurityAR: جرافيت متساوي الض
 EN: Get Quote | View Products | Contact UsAR: الحصول على عرض سعر | عرض المنتجات | اتصل بنا
 
 2. About Us | من نحن
-ENZaytun L.L.C-FZBased in Dubai, UAE, Zaytun L.L.C-FZ is a professional manufacturer specialized in precision CNC machining of high-performance isostatic graphite products for civilian and industrial applications.
+ENZaytun L.L.C-FZBased in Dubai, UAE, Zaytun is a professional manufacturer specialized in precision CNC machining of high-performance isostatic graphite products for civilian and industrial applications.
 We provide high-quality graphite components, custom machining services, and fast delivery to clients across the UAE, Saudi Arabia, GCC, and the entire Middle East region.
 Our mission is to deliver reliable, high-precision graphite solutions with competitive pricing and local professional support.
 ARزيتون ذ.م.متقع زيتون ذ.م.م في دبي، الإمارات العربية المتحدة، وهي مصنع محلي متخصص في التصنيع الدقيق بسى ان سى لمنتجات الجرافيت المتساوي الضغط عالي الأداء للاستخدامات المدنية والصناعية.
@@ -104,7 +104,7 @@ AR
 6.EN: Professional Technical Support | AR: دعم فني محترف
 
 7. Projects | المشاريع
-EN: Precision Graphite Parts by Zaytun L.L.C-FZ | Machining Projects for Dubai & Middle East ClientsAR: قطع جرافيت دقيقة من زيتون ذ.م.م | مشاريع تصنيع لعملاء دبي والشرق الأوسط
+EN: Precision Graphite Parts by Zaytun | Machining Projects for Dubai & Middle East ClientsAR: قطع جرافيت دقيقة من زيتون ذ.م.م | مشاريع تصنيع لعملاء دبي والشرق الأوسط
 
 8. Contact Us | اتصل بنا
 EN:Zaytun L.L.C-FZDubai, UAEPhone / WhatsApp: +971-XXX-XXXXEmail: info@zaytungraphite.aeWorking Hours: Saturday – Thursday 8:00 AM – 06:00 PM
@@ -120,7 +120,7 @@ Inquiry Form 询价表单（英 + 阿）
 8.Submit Request | إرسال الطلب
 
 四、网站底部 Footer 版权
-EN© 2026 Zaytun L.L.C-FZ. All Rights Reserved.Isostatic Graphite Precision CNC Machining | Dubai – UAE
+EN© 2026 Zaytun. All Rights Reserved.Isostatic Graphite Precision CNC Machining | Dubai – UAE
 AR© 2026 زيتون ذ.م.م. جميع الحقوق محفوظة.تصنيع جرافيت متساوي الضغط دقيق بسى ان سى | دبي – الإمارات العربية المتحدة
 
 五、建站必备按钮文字（全补全）

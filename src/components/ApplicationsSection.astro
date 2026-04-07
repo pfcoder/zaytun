@@ -2,6 +2,15 @@
 import type { SiteContent } from '../lib/types';
 
 const { content } = Astro.props as { content: SiteContent };
+
+const applicationImages = [
+  '/images/app1.jpg',
+  '/images/app2.jpg',
+  '/images/app3.jpg',
+  '/images/app4.webp',
+  '/images/app5.jpg',
+  '/images/app6.jpg'
+];
 ---
 
 <section class="section" id="applications">
@@ -11,11 +20,17 @@ const { content } = Astro.props as { content: SiteContent };
       <h2 data-i18n="applicationsIntro.title">{content.applicationsIntro.title}</h2>
       <p data-i18n="applicationsIntro.description">{content.applicationsIntro.description}</p>
     </div>
-    <div class="card-grid card-grid--three">
+    <div class="application-strip" role="list" aria-label={content.applicationsIntro.title}>
       {content.applications.map((item, index) => (
-        <article class="card card--application">
-          <h3 data-i18n={`applications.${index}.name`}>{item.name}</h3>
-          <p data-i18n={`applications.${index}.description`}>{item.description}</p>
+        <article
+          class="application-tile"
+          role="listitem"
+          style={`--application-image: url('${applicationImages[index % applicationImages.length]}')`}
+        >
+          <div class="application-tile__content">
+            <h3 data-i18n={`applications.${index}.name`}>{item.name}</h3>
+            <p data-i18n={`applications.${index}.description`}>{item.description}</p>
+          </div>
         </article>
       ))}
     </div>

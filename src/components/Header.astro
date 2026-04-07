@@ -12,7 +12,9 @@ const { content, languages, currentLanguage } = Astro.props;
 
 <header class="site-header" data-site-header>
   <div class="container site-header__inner">
-    <a class="brand" href="#top" data-i18n="header.brand">{content.header.brand}</a>
+    <a class="brand" href="#top" aria-label={content.header.brand}>
+      <img class="brand__logo" src="/images/logo.png" alt={content.header.brand} loading="eager" decoding="async" />
+    </a>
     <nav class="site-nav" aria-label="Primary">
       {content.header.nav.map((item, index) => (
         <a href={item.href} data-i18n={`header.nav.${index}.label`}>{item.label}</a>

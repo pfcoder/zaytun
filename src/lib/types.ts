@@ -27,6 +27,7 @@ export type PainPointItem = {
 
 export type ProductItem = {
   name: string;
+  label: string;
   summary: string;
   specs: string[];
 };
